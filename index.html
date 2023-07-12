@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="main-heading" id="heading">Welcome to JS</h1>
+    <input type="text" id="fullName">
+    <button onclick="changeHeading()">Change text</button>
+    <button id="add-name">Add Name</button>
+
+    <script src="./day_one.js">
+    </script>
+
+    <script>
+        console.log('--->', document.getElementById('heading'))
+
+        document.getElementById('add-name').onclick = changeHeading
+        
+        function changeHeading() {
+            document.getElementById('heading').innerHTML = 'Heading Changed'
+            document.getElementById('fullName').value = 'kiran'
+        }
+    </script>
+</body>
+</html>
