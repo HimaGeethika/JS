@@ -1,7 +1,7 @@
 const names = ['kiran','hima', 'rat', 'cat']
 
 // push, pop, slice, splice, concat, map, filter, find, reduce, forEach, sort, reverse.....
-// includes, indexOf    
+// includes, indexOf, findIndex
 
 names.push('villa') // push
 console.log('push', names)
@@ -35,3 +35,12 @@ let otherNames = ['dog', 'rat', 'blacky']
 otherNames = otherNames.concat(names)
 // otherNames = [...otherNames, ...names]
 console.log('concated', otherNames)
+
+console.log("names==> ", names)
+console.log(names.includes('rat'))//false
+console.log("includes ", names);
+
+console.log("indexOf ",names.indexOf('cat'));
+
+// reverse
+names.reverse() // ['cat','rat',.....]
