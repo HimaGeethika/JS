@@ -50,3 +50,11 @@ for (i = 0; i < str.length; i++) {
     }
 }
 console.log(charSet)
+
+//factorial
+let fact=1;
+let num=5;
+for(let i=1;i<=5;i++){
+fact=fact * i;
+}
+console.log(fact);
